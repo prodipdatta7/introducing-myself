@@ -1,0 +1,24 @@
+<div class="w-100-p">
+  <div class="w-100-p" fxLayout="column" fxLayoutAlign="start start">
+    <div class="w-100-p">
+      <mat-toolbar color="primary">
+        <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center">
+          <div>
+            <span class="headline-1">My Portfolio</span>
+          </div>
+          <div class="main-menu">
+            <ul class="menu-list" fxLayout="row" fxLayoutALign="start center" fxLayoutGap="20px">
+              <li class="menu-item"><a (click)="openLink('dashboard')">Dashboard</a></li>
+              <li class="menu-item"><a (click)="openLink('cp-history')">Competitive Programming</a></li>
+              <li class="menu-item"><a (click)="openLink('projects')">Projects</a></li>
+            </ul>
+          </div>
+        </mat-toolbar-row>
+      </mat-toolbar>
+    </div>
+    <div class="w-100-p">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
